@@ -13,6 +13,12 @@ router.get('/',function(req,res){
 	console.log("Obtained", obj.bgimage, obj.color)
 	res.render('index', {"content":content, "bgimage":obj.bgimage, "color":obj.color});
 });
+router.get('/recaptcha',function(req,res){
+	res.render('recaptcha');
+});
+router.post('/recaptcha',function(req,res){
+	res.render('successrecaptcha');
+});
 //add the router
 app.use('/', router);
 app.listen(process.env.port || 3000);

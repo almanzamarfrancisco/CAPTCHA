@@ -27,6 +27,7 @@ reloadBtn.addEventListener("click", ()=>{
 	location.reload()
 });
 checkBtn.addEventListener("click", e =>{
+	let ftext = document.querySelector(".ftext")
 	e.preventDefault(); //preventing button from it's default behaviour
 	statusTxt.style.display = "block";
 	//adding space after each character of user entered values because I've added spaces while generating captcha
