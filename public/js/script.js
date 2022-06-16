@@ -46,7 +46,8 @@ checkBtn.addEventListener("click", e =>{
 	}
 });
 function removeContent(){
- inputField.value = "";
- ftext.textContent = "";
- statusTxt.style.display = "none";
+	let ftext = document.querySelector(".ftext")
+	inputField.value = "";
+	ftext.textContent = "";
+	statusTxt.style.display = "none";
 }
